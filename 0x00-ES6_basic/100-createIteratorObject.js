@@ -5,6 +5,7 @@ export default function createIteratorObject(report) {
     if (x) {
       employees = [...employees, ...report.allEmployees[x]];
     }
+  }
 
   return employees;
 }
