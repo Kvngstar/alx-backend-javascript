@@ -6,9 +6,9 @@ export default function iterateThroughObject(reportWithIterator) {
 
   for (const value of reportWithIterator) {
     if (counter === iteratorLength - 1) {
-      stringConstruct = stringConstruct + value;
+      stringConstruct = `${stringConstruct}${value}`;
     } else {
-      stringConstruct = stringConstruct + value + ' | ';
+      stringConstruct = `${stringConstruct}${value}  | `;
     }
 
     counter += 1;
