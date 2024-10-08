@@ -3,9 +3,10 @@ export default function appendToEachArrayValue(array, appendString) {
 
   for (const idx of array) {
     const value = idx;
+    // eslint-disable-next-line no-param-reassign
     array[num] = appendString + value;
-    num = num + 1;
-  };
+    num += 1;
+  }
 
   return array;
 }
